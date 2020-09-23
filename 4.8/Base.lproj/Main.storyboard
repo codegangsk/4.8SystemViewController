@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Akg-Ii-Aco">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6-63118_wallpaper-lg-g4-1440-x-2560-qhd-samsung" translatesAutoresizingMaskIntoConstraints="NO" id="Akg-Ii-Aco">
                                 <rect key="frame" x="20" y="44" width="374" height="374"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="ITe-fm-0A3">
@@ -76,6 +76,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="6-63118_wallpaper-lg-g4-1440-x-2560-qhd-samsung" width="1440" height="2560"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
