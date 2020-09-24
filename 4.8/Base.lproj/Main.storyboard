@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,54 +16,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6-63118_wallpaper-lg-g4-1440-x-2560-qhd-samsung" translatesAutoresizingMaskIntoConstraints="NO" id="Akg-Ii-Aco">
-                                <rect key="frame" x="20" y="44" width="374" height="374"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="ITe-fm-0A3">
-                                <rect key="frame" x="60" y="433" width="294" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oqW-Yz-AMV">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTG-ut-dFw">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
-                                        <state key="normal" title="Share"/>
-                                        <connections>
-                                            <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBl-eX-iWz"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESO-Ki-FAb">
-                                        <rect key="frame" x="82" y="0.0" width="40" height="30"/>
-                                        <state key="normal" title="Safari"/>
-                                        <connections>
-                                            <action selector="safariButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADi-Hs-gBd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8W-kS-CrV">
-                                        <rect key="frame" x="164" y="0.0" width="51" height="30"/>
-                                        <state key="normal" title="camera"/>
-                                        <connections>
-                                            <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHf-pP-baW"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZI-yC-s5l">
-                                        <rect key="frame" x="257" y="0.0" width="37" height="30"/>
-                                        <state key="normal" title="Email"/>
-                                        <connections>
-                                            <action selector="emailButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HTx-bK-iWB"/>
-                                        </connections>
-                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6-63118_wallpaper-lg-g4-1440-x-2560-qhd-samsung" translatesAutoresizingMaskIntoConstraints="NO" id="Akg-Ii-Aco">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="733"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="ITe-fm-0A3">
+                                        <rect key="frame" x="40" y="748" width="294" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTG-ut-dFw">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                <state key="normal" title="Share"/>
+                                                <connections>
+                                                    <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBl-eX-iWz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESO-Ki-FAb">
+                                                <rect key="frame" x="82" y="0.0" width="40" height="30"/>
+                                                <state key="normal" title="Safari"/>
+                                                <connections>
+                                                    <action selector="safariButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADi-Hs-gBd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8W-kS-CrV">
+                                                <rect key="frame" x="164" y="0.0" width="51" height="30"/>
+                                                <state key="normal" title="camera"/>
+                                                <connections>
+                                                    <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHf-pP-baW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZI-yC-s5l">
+                                                <rect key="frame" x="257" y="0.0" width="37" height="30"/>
+                                                <state key="normal" title="Email"/>
+                                                <connections>
+                                                    <action selector="emailButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HTx-bK-iWB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Akg-Ii-Aco" secondAttribute="trailing" constant="20" id="Ee2-O2-shn"/>
-                            <constraint firstItem="ITe-fm-0A3" firstAttribute="top" secondItem="Akg-Ii-Aco" secondAttribute="bottom" constant="15" id="FSr-r2-lif"/>
-                            <constraint firstItem="Akg-Ii-Aco" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QkV-ri-wfc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ITe-fm-0A3" secondAttribute="trailing" constant="60" id="e6W-fr-NT6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Akg-Ii-Aco" secondAttribute="bottom" constant="444" id="fEo-aM-Bmo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ITe-fm-0A3" secondAttribute="bottom" constant="399" id="iTF-ZO-PNv"/>
-                            <constraint firstItem="Akg-Ii-Aco" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="t5Y-Tz-bu5"/>
-                            <constraint firstItem="ITe-fm-0A3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="xSI-ke-d9G"/>
+                            <constraint firstItem="oqW-Yz-AMV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="37l-fn-Q9r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oqW-Yz-AMV" secondAttribute="bottom" constant="20" id="Bvr-I9-4Z2"/>
+                            <constraint firstItem="oqW-Yz-AMV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HfL-oZ-2Fs"/>
+                            <constraint firstItem="oqW-Yz-AMV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QwN-my-87E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oqW-Yz-AMV" secondAttribute="trailing" constant="20" id="bed-dy-3Y6"/>
+                            <constraint firstItem="oqW-Yz-AMV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bog-t7-kG1"/>
                         </constraints>
                     </view>
                     <connections>
