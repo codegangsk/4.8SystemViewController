@@ -17,40 +17,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oqW-Yz-AMV">
-                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <rect key="frame" x="20" y="64" width="374" height="768"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6-63118_wallpaper-lg-g4-1440-x-2560-qhd-samsung" translatesAutoresizingMaskIntoConstraints="NO" id="Akg-Ii-Aco">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="733"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="726"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="ITe-fm-0A3">
-                                        <rect key="frame" x="40" y="748" width="294" height="30"/>
+                                        <rect key="frame" x="18.666666666666657" y="741" width="337" height="27"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTG-ut-dFw">
-                                                <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="33" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Share"/>
                                                 <connections>
                                                     <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBl-eX-iWz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESO-Ki-FAb">
-                                                <rect key="frame" x="82" y="0.0" width="40" height="30"/>
+                                                <rect key="frame" x="75" y="0.0" width="33" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Safari"/>
                                                 <connections>
                                                     <action selector="safariButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADi-Hs-gBd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8W-kS-CrV">
-                                                <rect key="frame" x="164" y="0.0" width="51" height="30"/>
+                                                <rect key="frame" x="150" y="0.0" width="42" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="camera"/>
                                                 <connections>
                                                     <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHf-pP-baW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZI-yC-s5l">
-                                                <rect key="frame" x="257" y="0.0" width="37" height="30"/>
+                                                <rect key="frame" x="234.00000000000003" y="0.0" width="30.999999999999972" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Email"/>
                                                 <connections>
                                                     <action selector="emailButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HTx-bK-iWB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juD-3Y-8Q4">
+                                                <rect key="frame" x="307" y="0.0" width="30" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="MMS"/>
+                                                <connections>
+                                                    <action selector="MMSButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gja-mC-XPk"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -62,7 +74,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="oqW-Yz-AMV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="37l-fn-Q9r"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oqW-Yz-AMV" secondAttribute="bottom" constant="20" id="Bvr-I9-4Z2"/>
                             <constraint firstItem="oqW-Yz-AMV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HfL-oZ-2Fs"/>
                             <constraint firstItem="oqW-Yz-AMV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QwN-my-87E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oqW-Yz-AMV" secondAttribute="trailing" constant="20" id="bed-dy-3Y6"/>

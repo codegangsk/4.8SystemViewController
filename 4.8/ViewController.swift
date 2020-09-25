@@ -9,13 +9,16 @@ import UIKit
 import SafariServices
 import MessageUI
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, MFMailComposeViewControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate {
     
     @IBOutlet var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+}
+
+extension ViewController {
     
     @IBAction func shareButtonTapped(_ sender: UIButton) {
         guard let image = imageView.image else { return }
@@ -78,6 +81,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func MMSButtonTapped(_ sender: UIButton) {
+        guard MFMessageComposeViewController.canSendText() else { return }
+        
+        let mmsComposer = MFMessageComposeViewController()
+        mmsComposer.messageComposeDelegate = self
+        
+        mmsComposer.recipients = ["4085551212"]
+        mmsComposer.body = "Hello from Seoul!"
+        
+        present(mmsComposer, animated: true, completion: nil)
+    }
+    
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
         dismiss(animated: true, completion: nil)
     }
 }
